@@ -1,57 +1,90 @@
-* {
+/*---------------------CÓDIGO GENERAL ESTILO-----------*/
+html, body{
+  margin: 0;
+  overflow-x: hidden;  
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-family: $font-family-sans-serif;
+}
+*,*:after,*:before{
   box-sizing: border-box;
 }
-
-body {
+header *, footer *{
+  margin:0;
+  padding:0;
+  list-style:none;
+  color: white;
+}
+.container{
+  width:94%;
+  max-width:1200px;
+  margin:0 auto;
+}
+.cabecera {
+  background-image: url(../images/foto-principal.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  align-items: center;
+  justify-content: center;
+}
+/*SECCIÓN CON LA FOTO DE LA COMIDA Y UN POCO DE SU HISTORIA*/
+.comida {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
+  margin-top: 2cm;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
+.comida__foto {
+  background-image: url(../images/pulpo.jpg);
+  background-size: cover;
+  border-radius: 0.4cm;
+  overflow: hidden;
+  width: 100%;
   height: auto;
-
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
-  }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
-
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
-  }
+.comida__historia {
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
 }
 
-.uoc-footer {
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
+.historia__texto {
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
+  display: flex;
+  text-align: justify;
+}
+/*BLOQUE DE INGREDIENTES DE LA RECETA*/
+.receta {
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
+  margin-top: 2cm;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.receta__ingredientes, .receta__pasos {
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
+}
+
+.lista__elemento, .lista__indicacion {
+  border: 1px solid black;
+  border-radius: 0.4cm;
+  padding: 15px;
+  margin: 10px;
+  text-align: justify;
 }

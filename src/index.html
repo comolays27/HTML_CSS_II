@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name ="description" content="Conoce la historia de uno de los platos más tradicionales de la gastronomía gallega">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Pulpo a Feira</title>
+
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <header class="cabecera">
+    <h1 class="cabecera__titulo">DISFRUTA DE UNA GASTRONOMÍA RICA EN HISTORIA</h1>
+  </header>
+  <main class="container">
+    <section class="comida container">
+      <div class="comida__foto"></div>
+      <div class="comida__historia">
+        <p class="historia__texto">El pulpo a la gallega tiene una larga tradición en la región, especialmente en la provincia de Lugo, aunque se disfruta en toda Galicia. Su origen se remonta a tiempos antiguos, ya que el pulpo ha sido una de las principales fuentes de alimentación en la costa gallega debido a su abundancia en las aguas del Atlántico.</p>
+        <p class="historia__texto">El plato se prepara de manera simple pero deliciosa: el pulpo se cuece en agua con sal (sin más ingredientes que eso), y luego se corta en trozos y se sirve sobre una cama de rodajas de patata cocida. Después, se espolvorea con pimentón, se rocía con aceite de oliva y, a veces, se añade sal gruesa. En algunas ocasiones, se acompaña con un poco de sal gorda o incluso con un toque de vinagre.</p>
+        <p class="historia__texto">El pulpo a la gallega se disfruta comúnmente en celebraciones y festividades, especialmente durante las festas de Santiago (como la fiesta del patrón de Galicia, el 25 de julio), y en las famosas ferias del pulpo que se celebran en pueblos como Carballiño, donde el plato se sirve en grandes cantidades a los asistentes.</p>
+        <p class="historia__texto">Es un ejemplo de cómo la sencillez y los productos frescos pueden combinarse para crear una receta icónica que ha perdurado por generaciones.</p>
+      </div>
+    </section>
+    <section class="receta">
+      <article class="receta__ingredientes">
+      <h2 class="ingredientes__titulo">Ingredientes:</h2>
+      <ul class="ingredientes__lista">
+        <li class="lista__elemento">Pulpo</li>
+        <li class="lista__elemento">Patatas</li>
+        <li class="lista__elemento">Aceite de oliva virgen extra</li>
+        <li class="lista__elemento">Pimentón (dulce o picante)</li>
+        <li class="lista__elemento">Sal gruesa</li>
+        <li class="lista__elemento">Agua</li>
+        <li class="lista__elemento--opcional">Laurel</li>
+      </ul>
+      </article>
+      <article class="receta__pasos">
+      <h2 class="pasos__titulo">Pasos a seguir:</h2>
+      <ol class="pasos__lista">
+        <li class="lista__indicacion">Cocer el pulpo: Lleva a ebullición una olla grande con agua y una hoja de laurel. Cuando el agua esté hirviendo, introduce el pulpo y, cuando vuelva a hervir, apaga el fuego. Deja que repose unos minutos y repite este proceso tres veces. Luego, cocina el pulpo durante unos 40-50 minutos, dependiendo del tamaño, hasta que esté tierno.</li>
+        <li class="lista__indicacion">Cocer las patatas: Mientras se cuece el pulpo, pela y corta las patatas en rodajas gruesas. Cocina las patatas en una olla con agua y sal hasta que estén tiernas (aproximadamente 20-30 minutos).</li>
+        <li class="lista__indicacion">Escurrir el pulpo: Una vez cocido el pulpo, sácalo de la olla y corta los tentáculos en rodajas.</li>
+        <li class="lista__indicacion">Preparar el plato: Coloca las rodajas de patata en un plato grande, sobre ellas pon las rodajas de pulpo.</li>
+        <li class="lista__indicacion">Añadir el pimentón: Espolvorea el pulpo con pimentón (puede ser dulce o picante, según prefieras).</li>
+        <li class="lista__indicacion">Aliñar con aceite: Riega el plato con aceite de oliva virgen extra y añade sal gruesa al gusto.</li>
+      </ol>
+      </article>
+    </section>
+  </main>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
